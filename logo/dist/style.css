@@ -85,10 +85,9 @@ ul.sub-menu.resorces {
   background: #fff;
   border: 1px solid #e6e6f5;
   box-shadow: 0px 16px 32px 0px #1a1b3d38;
-
   box-shadow: 0px 4px 4px 0px #1214501f;
-
   box-shadow: 0px 1px 1px 0px #8587ab7d;
+  z-index: 1;
 }
 .right-side {
   width: 100%;
@@ -193,7 +192,7 @@ li:has(.left-side):hover .resorces {
   content: "";
   height: 24px;
   width: 24px;
-  background-image: url("assets/icons/list1.png");
+  background-image: url("../assets/icons/list1.png");
   position: absolute;
   right: calc(100% + 1rem);
 }
@@ -202,7 +201,7 @@ li:has(.left-side):hover .resorces {
   content: "";
   height: 24px;
   width: 24px;
-  background-image: url("assets/icons/focus1.png");
+  background-image: url("../assets/icons/focus1.png");
   position: absolute;
   right: calc(100% + 1rem);
 }
@@ -211,7 +210,7 @@ li:has(.left-side):hover .resorces {
   content: "";
   height: 24px;
   width: 24px;
-  background-image: url("assets/icons/list1.png");
+  background-image: url("../assets/icons/list1.png");
   position: absolute;
   right: calc(100% + 1rem);
 }

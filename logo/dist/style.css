@@ -40,7 +40,22 @@ a {
   margin-inline: auto;
   padding-inline: 140px;
 }
-
+@media screen and (max-width: 1050px) {
+  .container {
+    padding-inline: 80px;
+  }
+  .is-style-hero-pattern .wp-block-column:first-child {
+    padding-inline: 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding-inline: 20px;
+  }
+  .is-style-hero-pattern .wp-block-column:first-child {
+    padding-inline: 20px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -342,6 +357,18 @@ button.benefits-category-tab.active {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 35px;
   row-gap: 60px;
+  place-items: center;
+}
+@media screen and (max-width: 1440px) {
+  #benefits-results {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #benefits-results {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .benefit-item {

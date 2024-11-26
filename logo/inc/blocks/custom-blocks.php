@@ -22,10 +22,15 @@ function my_custom_block_styles()
                     flex-direction: column;
                     justify-content: center;
                 }
+                    @media (max-width: 500px) {
+                        .is-style-hero-pattern .wp-block-column {
+                            min-width: 100%;
+                        }
+                    }
                 .is-style-hero-pattern .wp-block-column:first-child {
-                    padding-left: 150px;
+                    padding-left: 10%;
                     padding-right: 2rem;
-
+                    flex-basis: 20.1%;
                 }
             ',
         )
@@ -47,6 +52,7 @@ function my_custom_block_styles()
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    object-position: right;
                 }
             ',
         )

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home
+Template Name: Product
 */
 
 
@@ -63,7 +63,7 @@ get_header();
             <!-- Results Container -->
             <div id="benefits-results">
                 <?php
-                // Initial query to load all 'benefit' posts
+                // Initial query 
                 $benefits_query = new WP_Query(array(
                     'post_type' => 'benefit',
                     'posts_per_page' => 6,
@@ -96,6 +96,7 @@ get_header();
             <?php
             // Check if there are more posts to load
             $total_posts = $benefits_query->found_posts;
+            // console.log($total_posts);
             if ($total_posts > 6) :
             ?>
                 <button id="load-more-btn">Load More</button>

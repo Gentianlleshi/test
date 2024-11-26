@@ -51,30 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  // function updateLoadMoreVisibility() {
-  //   const params = new URLSearchParams();
-  //   params.append("action", "get_total_posts");
-  //   params.append("category", activeCategory);
-  //   inactiveTags.forEach((tag) => params.append("inactive_tags[]", tag));
-
-  //   fetch(ajax_object.ajax_url, {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: params.toString(),
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       const totalPosts = data.total_posts;
-  //       const totalPages = Math.ceil(totalPosts / postsPerPage);
-  //       if (currentPage >= totalPages) {
-  //         loadMoreBtn.style.display = "none";
-  //       } else {
-  //         loadMoreBtn.style.display = "block";
-  //       }
-  //     })
-  //     .catch((error) => console.error("Error:", error));
-  // }
-
   categoryTabs.forEach((tab) => {
     tab.addEventListener("click", function () {
       activeCategory = this.getAttribute("data-category");
